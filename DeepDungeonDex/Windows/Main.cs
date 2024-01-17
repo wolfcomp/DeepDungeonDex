@@ -142,7 +142,7 @@ public partial class Main : Window, IDisposable
             return;
         }
 
-        if (_condition[ConditionFlag.PvPDisplayActive])
+        if (!_condition[ConditionFlag.InDeepDungeon])
         {
             IsOpen = false;
             return;
